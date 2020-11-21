@@ -1,6 +1,6 @@
 import sys
 
-number = int(sys.argv[1])
+
 
 def collatz(number):
 	if number%2 == 0:
@@ -14,6 +14,18 @@ def something(number):
 	while number > 1:
 		number = collatz(number)
 
-something(number)
+
+
+
+print("Please enter a number")
+
+try:
+    number = int(input())
+    something(number)
+    
+except:
+    print("Please enter a valid integer")
+
+
 
 
